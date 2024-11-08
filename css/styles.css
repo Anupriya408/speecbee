@@ -7,15 +7,6 @@ body {
 
 .head {
   text-align: center;
-
-  h1 {
-    font-size: 36px;
-    color: #000000;
-    font-weight: 700;
-    text-align: center;
-    font-family: sans-serif;
-  }
-
   p {
     color: #000000;
     margin-bottom: 50px;
@@ -24,6 +15,15 @@ body {
     line-height: 15px;
     font-weight: 300;
   }
+  h1 {
+    font-size: 34px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+
 }
 
 .highlight {
@@ -47,8 +47,7 @@ body {
   width: 36px;
   height: 36px;
 }
-.speaker-list > div {
-}
+
 .speaker-list > div:nth-child(2) {
   background-color: #fff;
   border-radius: 10px;
@@ -95,7 +94,7 @@ body {
   border-radius: 50%;
 }
 .speaker-card {
-  height: 260px;
+  height: 250px;
 }
 .speaker-card:hover {
   transform: scale(1.05);
@@ -185,23 +184,17 @@ body {
 .nameDiv {
   line-height: 14px;
 }
-.company {
-  width: 220px;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: sans-serif;
-}
+
 .spacebee {
   line-height: 1px;
   color: #6b6b6b;
   font-family: Metropolis;
 }
-.iconDiv {
-  display: flex;
-  width: 100px;
-  height: 30px;
-
-  justify-content: space-between;
+.company {
+  width: 220px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 .custom-divider {
   width: 2px;
@@ -209,15 +202,26 @@ body {
   background-color: #ccc;
   margin: 0 20px;
 }
-.descriptuion {
-  /* border:1px solid red; */
+
+.iconDiv {
+  display: flex;
+  width: 100px;
+  height: 30px;
+
+  justify-content: space-between;
 }
+
 .description {
   font-size: 18px;
   color: #000000;
   font-family: Metropolis;
 }
-
+.arrow {
+  margin-left: 30%;
+  margin-top: 30px;
+  position: relative;
+  top: -40px;
+}
 .speaker-details .speaker-photo {
   width: 130px;
   height: 130px;
@@ -232,12 +236,7 @@ body {
   font-size: 1.3em;
   color: #888;
 }
-.arrow {
-  margin-left: 30%;
-  margin-top: 30px;
-  position: relative;
-  top: -40px;
-}
+
 
 /* Tablet view */
 @media (max-width: 768px) {
@@ -311,9 +310,10 @@ body {
   }
 
   .speaker-details {
+    height: 100%;
     padding: 10px;
     max-width: 90%;
-    height: 100%;
+    
   }
 
   .description {
