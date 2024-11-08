@@ -33,12 +33,12 @@ speakerList.addEventListener("click", (event) => {
             </svg>
           </div>
        </div>
-       <div class="custom-divider"></div> 
-        <div class="descriptuion">
+       <div class="custom-divide"></div> 
+        <div class="description">
          <p class="description">A brief description about ${name} Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas.</p>
         </div>
       
-        <span class="close-btn">&times;</span>
+        <span class="close-button">&times;</span>
       </div>
     `;
 
