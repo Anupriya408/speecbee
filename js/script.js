@@ -47,9 +47,13 @@ speakerList.addEventListener("click", (event) => {
 
     // Close button event listener
     speakerDetailsWrapper
-      .querySelector(".close-btn")
+      .querySelector(".close-button")
       .addEventListener("click", () => {
         speakerDetailsWrapper.style.display = "none"; 
       });
   }
 });
+
+
+
+

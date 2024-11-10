@@ -7,23 +7,23 @@ body {
 
 .head {
   text-align: center;
-  p {
-    color: #000000;
-    margin-bottom: 50px;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 15px;
-    font-weight: 300;
-  }
-  h1 {
-    font-size: 34px;
-    color: #000000;
-    font-weight: 700;
-    text-align: center;
-    font-family: sans-serif;
-  }
+}
 
+.head p {
+  color: #000000;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 300;
+}
 
+.head h1 {
+  font-size: 34px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 .highlight {
@@ -48,36 +48,9 @@ body {
   height: 36px;
 }
 
-.speaker-list > div:nth-child(2) {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
-  width: 100%;
-}
-.speaker-list > div:nth-child(3) {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
-  width: 100%;
-}
-.speaker-list > div:nth-child(4) {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
-  width: 100%;
-}
+.speaker-list > div:nth-child(2),
+.speaker-list > div:nth-child(3),
+.speaker-list > div:nth-child(4),
 .speaker-list > div:nth-child(5) {
   background-color: #fff;
   border-radius: 10px;
@@ -88,21 +61,26 @@ body {
   transition: transform 0.2s;
   width: 100%;
 }
+
 .speaker-photo {
   width: 130px;
   height: 130px;
   border-radius: 50%;
 }
+
 .speaker-card {
   height: 250px;
 }
+
 .speaker-card:hover {
   transform: scale(1.05);
 }
+
 .speaker-card > h3 {
   font-size: 1.5rem;
   margin: 10px 0;
 }
+
 .speaker-card > p {
   margin: 5px 0;
   color: #000000;
@@ -110,6 +88,7 @@ body {
   margin-top: 22px;
   font-weight: 600;
 }
+
 .speaker-card > span {
   color: #6b6b6b;
   font-size: 15px;
@@ -120,47 +99,42 @@ body {
 .cta-section {
   margin-top: 70px;
   width: 50%;
-
   height: 131px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   gap: 50px;
+}
 
-  .text {
-    width: 150px;
-    height: 42.65px;
-    font-family: "Work Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 21.11px;
-    text-align: left;
-    color: #000;
-    margin-top: 30px;
-  }
+.cta-section .text {
+  width: 150px;
+  height: 42.65px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.11px;
+  text-align: left;
+  color: #000;
+  margin-top: 30px;
+}
 
-  .cta-btn {
-    background-color: #0056b3;
-    color: white;
-    border: none;
+.cta-section .cta-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 405px;
+  height: 58.9px;
+  border-radius: 10px;
+  font-size: 20px;
+}
 
-    cursor: pointer;
-    width: 405px;
-    height: 58.9px;
-    border-radius: 10px;
-    font-size: 20px;
-
-    &:hover {
-      background-color: #007bff;
-    }
-  }
+.cta-section .cta-btn:hover {
+  background-color: #007bff;
 }
 
 .speaker-details-wrapper {
   display: none;
-}
-.speaker-details:hover {
-  transform: scale(1.05);
 }
 
 .speaker-details {
@@ -176,11 +150,17 @@ body {
   height: 170px;
   transition: transform 0.2s;
 }
+
+.speaker-details:hover {
+  transform: scale(1.05);
+}
+
 .imgDiv {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .nameDiv {
   line-height: 14px;
 }
@@ -190,12 +170,14 @@ body {
   color: #6b6b6b;
   font-family: Metropolis;
 }
+
 .company {
   width: 220px;
   font-size: 14px;
   font-weight: 600;
   font-family: sans-serif;
 }
+
 .custom-divide {
   width: 2px;
   height: 140px;
@@ -207,7 +189,6 @@ body {
   display: flex;
   width: 100px;
   height: 30px;
-
   justify-content: space-between;
 }
 
@@ -216,18 +197,21 @@ body {
   color: #000000;
   font-family: Metropolis;
 }
+
 .arrow {
   margin-left: 30%;
   margin-top: 30px;
   position: relative;
   top: -40px;
 }
+
 .speaker-details .speaker-photo {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   margin-right: 15px;
 }
+
 .speaker-details .close-button {
   position: absolute;
   top: 10px;
@@ -237,6 +221,59 @@ body {
   color: #888;
 }
 
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  width: 80%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 800%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  max-width: 100%;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel__arrow {
+  position: absolute;
+  transform: translateY(-50%);
+  height: 48px;
+  width: 48px;
+  background-color: white;
+  border: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+}
+.carousel__arrow--prev {
+  left: 10px;
+}
+.carousel__arrow--next {
+  right: 10px;
+}
 
 /* Tablet view */
 @media (max-width: 768px) {
@@ -249,19 +286,21 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .right,
   .left {
     display: none;
   }
+
   .cta-section {
     width: 80%;
   }
+
   .arrow {
     margin-left: 20%;
-    margin-top: 30px;
-    position: relative;
     top: -40px;
   }
+
   .cta-section .cta-btn {
     width: 100%;
   }
@@ -278,13 +317,14 @@ body {
     margin-bottom: 10px;
   }
 
-  .custom-divider {
+  .custom-divide {
     display: none;
   }
+
   .speaker-details {
     padding: 10px;
     max-width: 90%;
-    height: 100%;
+    height: auto;
   }
 }
 
@@ -302,18 +342,17 @@ body {
     width: 90%;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  .speaker-list .speaker-card {
+  .speaker-card {
     max-width: 90%;
   }
 
   .speaker-details {
-    height: 100%;
+    height: auto;
     padding: 10px;
     max-width: 90%;
-    
   }
 
   .description {
@@ -328,8 +367,6 @@ body {
 
   .arrow {
     margin-left: 10%;
-    margin-top: 30px;
-    position: relative;
     top: -40px;
   }
 }
