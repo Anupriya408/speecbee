@@ -1,7 +1,4 @@
-@font-face {
-  font-family:  Arial, sans-serif;
-  
-}
+
 @font-face {
   font-family:  Arial, sans-serif;
 }
@@ -11,8 +8,53 @@
   box-sizing: border-box;
   font-family:  Arial, sans-serif;
 }
+.square-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-.gallery-wrap {
+.square {
+  width: 70%;
+  display: none;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 4px 10px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.square .close-button {
+  float: left;
+  font-size: 30px;
+  cursor: pointer;
+}
+.square #squareName {
+  margin: 1rem 0;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.square .square-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.square .square-profile .square-profile-details {
+  width: 70%;
+}
+.square .square-profile .square-profile-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+.square .language {
+  width: 10px;
+  border-left: 1px solid rgb(183, 183, 183);
+  height: 100px;
+}
+
+.profile-wrap {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -20,33 +62,33 @@
   margin: 1% auto;
 }
 
-.gallery {
+.profile {
   width: 1300px;
   display: flex;
   overflow-x: scroll;
 }
-.gallery div {
+.profile div {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, auto);
   padding: 10px;
   flex: none;
 }
-.gallery div span {
+.profile div span {
   display: flex;
   flex-direction: column;
+  padding: 30px 20px;
+  width: 280px;
   justify-content: center;
   align-items: center;
   box-shadow: 4px 10px 24px rgba(0, 0, 0, 0.1);
   margin: 1rem;
   border-radius: 10px;
-  padding: 30px 20px;
-  width: 280px;
 }
-.gallery div span img {
-  width: 50%;
+.profile div span img {
+  width: 70%;
 }
-.gallery::-webkit-scrollbar {
+.profile::-webkit-scrollbar {
   display: none;
 }
 
@@ -54,10 +96,10 @@
   cursor: pointer;
 }
 #backButton:nth-child(1), #nextButton:nth-child(1) {
-  rotate: 180deg;
+  rotate: 150deg;
 }
 
-.gallery-content {
+.profile-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,15 +107,15 @@
   display: flex !important;
   gap: 2px !important;
 }
-.gallery-content h2 {
+.profile-content h2 {
   margin-bottom: 16px;
-  font-family: "Metropolis-Bold", sans-serif;
+  font-family: Arial, sans-serif; 
 }
-.gallery-content h4 {
+.profile-content h4 {
   font-size: 1rem;
 }
-.gallery-content p,
-.gallery-content #squareCompany {
+.profile-content p,
+.profile-content #squareCompany {
   color: rgba(107, 107, 107, 0.715);
   margin-top: 0.4rem;
   font-size: 0.9rem;
@@ -84,7 +126,7 @@ header {
   text-align: center;
 }
 header div h1 {
-  font-family: "Metropolis-Bold", sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 800;
 }
 header div p {
@@ -180,65 +222,18 @@ header a {
     width: 30vw;
   }
 }
-
-.square-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.square {
-  width: 81%;
-  display: none;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 4px 10px 24px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-}
-.square .close-button {
-  float: right;
-  font-size: 30px;
-  cursor: pointer;
-}
-.square #squareName {
-  margin: 1rem 0;
-  font-weight: 800;
-  font-family: metropolis-bold;
-}
-.square .square-profile {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.square .square-profile .square-profile-details {
-  width: 70%;
-}
-.square .square-profile .square-profile-icons {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin: 1rem 0;
-}
-.square .language {
-  width: 10px;
-  border-left: 1px solid rgb(183, 183, 183);
-  height: 100px;
-}
-
 @media (max-width: 768px) {
-  .gallery {
+  .profile {
     width: 700px;
   }
-  .gallery div {
+  .profile div {
     grid-template-columns: repeat(2, auto);
     grid-gap: 10px;
   }
   #backButton, #nextButton {
     width: 30px;
   }
-  .vl {
+  .language {
     display: none;
   }
   .square {
@@ -260,4 +255,3 @@ header a {
   }
 }
 
-/*# sourceMappingURL=style.css.map */

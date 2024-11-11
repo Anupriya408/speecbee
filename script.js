@@ -1,10 +1,10 @@
-let scrollContainer = document.querySelector(".gallery")
+let scrollContainer = document.querySelector(".profile")
 let backButton = document.getElementById("backButton")
 let nextButton = document.getElementById("nextButton")
 
-scrollContainer.addEventListener("wheel", (evt)=>{
-    evt.preventDefault()
-    scrollContainer.scrollLeft += evt.deltaY
+scrollContainer.addEventListener("wheel", (e)=>{
+    e.preventDefault()
+    scrollContainer.scrollLeft += e.deltaY
     scrollContainer.style.scrollBehavior = "auto";
 })
 
